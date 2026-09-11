@@ -1,0 +1,3659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rei do Açai — peça o seu do jeito que gosta</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --roxo-900:#2B0F36;
+  --roxo-700:#4A1E5A;
+  --roxo-500:#7A3A8C;
+  --creme:#FBF3E7;
+  --pink:#C13E7A;
+  --pink-dark:#9C2F60;
+  --verde:#7FA83E;
+  --mel:#E8A33D;
+  --shadow:0 20px 45px rgba(20,5,28,0.35);
+  --radius-lg:28px;
+  --radius-md:16px;
+}
+
+/* =========================
+   RESET / RESPONSIVIDADE
+========================= */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+body{
+  margin:0;
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+  background:var(--creme);
+  color:var(--roxo-900);
+  font-family:'Work Sans',sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+img,
+svg,
+video{
+  max-width:100%;
+  height:auto;
+}
+
+button,
+input,
+select,
+textarea{
+  font:inherit;
+  max-width:100%;
+}
+
+h1,h2,h3{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  line-height:1.08;
+  margin:0;
+  color:var(--roxo-900);
+}
+
+p{
+  margin:0;
+}
+
+a{
+  color:inherit;
+}
+
+.wrap{
+  width:100%;
+  max-width:1120px;
+  margin:0 auto;
+  padding:0 28px;
+}
+
+@media (max-width:640px){
+  .wrap{
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  width:100%;
+  background:rgba(251,243,231,0.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(43,15,54,0.08);
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  padding:18px 0;
+  min-width:0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:'Fraunces',serif;
+  font-weight:700;
+  font-size:1.3rem;
+  color:var(--roxo-900);
+  text-decoration:none;
+  min-width:0;
+}
+
+.logo-mark{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:radial-gradient(
+    circle at 32% 30%,
+    var(--pink) 0%,
+    var(--roxo-700) 65%,
+    var(--roxo-900) 100%
+  );
+  flex-shrink:0;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:32px;
+  min-width:0;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--roxo-700);
+  font-size:0.95rem;
+  font-weight:500;
+  transition:color .15s ease;
+}
+
+nav a:hover{
+  color:var(--pink-dark);
+}
+
+.btn-whats{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  background:var(--roxo-900);
+  color:var(--creme);
+  padding:11px 20px;
+  border-radius:100px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.92rem;
+  border:none;
+  cursor:pointer;
+  transition:transform .15s ease, background .15s ease;
+  white-space:nowrap;
+}
+
+.btn-whats:hover{
+  background:var(--pink-dark);
+  transform:translateY(-1px);
+}
+
+.btn-whats svg{
+  width:16px;
+  height:16px;
+  flex-shrink:0;
+}
+
+@media (max-width:800px){
+
+  nav{
+    gap:10px;
+  }
+
+  nav a.nav-link{
+    display:none;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .header-inner{
+    padding:13px 0;
+  }
+
+  .logo{
+    font-size:1.08rem;
+  }
+
+  .logo-mark{
+    width:30px;
+    height:30px;
+  }
+
+  .btn-whats{
+    padding:9px 13px;
+    font-size:0.82rem;
+  }
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  width:100%;
+  max-width:100%;
+  padding:76px 0 60px;
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);
+  gap:40px;
+  align-items:center;
+  overflow:hidden;
+}
+
+.hero > *{
+  min-width:0;
+}
+
+@media (max-width:880px){
+
+  .hero{
+    grid-template-columns:1fr;
+    padding:44px 0 40px;
+    gap:30px;
+  }
+
+}
+
+.hero-eyebrow{
+  color:var(--pink-dark);
+  font-weight:600;
+  font-size:0.95rem;
+  margin-bottom:14px;
+}
+
+.hero h1{
+  font-size:clamp(2.4rem,5vw,3.6rem);
+  letter-spacing:-0.01em;
+  max-width:11ch;
+}
+
+.hero-sub{
+  margin-top:20px;
+  font-size:1.08rem;
+  color:var(--roxo-700);
+  max-width:44ch;
+  line-height:1.55;
+}
+
+.hero-ctas{
+  margin-top:32px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.btn-primary{
+  background:var(--pink);
+  color:var(--creme);
+  border:none;
+  padding:15px 26px;
+  border-radius:100px;
+  font-weight:600;
+  font-size:1rem;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  box-shadow:0 10px 24px rgba(193,62,122,0.35);
+  transition:transform .15s ease,box-shadow .15s ease;
+  max-width:100%;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 30px rgba(193,62,122,0.42);
+}
+
+.btn-ghost{
+  background:transparent;
+  color:var(--roxo-900);
+  border:1.5px solid rgba(43,15,54,0.25);
+  padding:14px 24px;
+  border-radius:100px;
+  font-weight:600;
+  font-size:1rem;
+  text-decoration:none;
+  transition:border-color .15s ease,background .15s ease;
+  max-width:100%;
+}
+
+.btn-ghost:hover{
+  border-color:var(--roxo-900);
+  background:rgba(43,15,54,0.05);
+}
+
+
+/* =========================
+   IMAGEM / SVG DO HERO
+========================= */
+
+.hero-art{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  overflow:hidden;
+}
+
+.hero-art svg{
+  display:block;
+  width:100%;
+  max-width:420px;
+  height:auto;
+  min-width:0;
+  flex-shrink:1;
+}
+
+@media (max-width:880px){
+
+  .hero-art{
+    margin-top:20px;
+  }
+
+  .hero-art svg{
+    width:min(80vw,380px);
+    max-width:100%;
+  }
+
+}
+
+@media (max-width:600px){
+
+  .hero{
+    padding-top:35px;
+  }
+
+  .hero-art{
+    margin-top:10px;
+    padding:0;
+  }
+
+  .hero-art svg{
+    width:90%;
+    max-width:320px;
+    height:auto;
+  }
+
+  .hero h1{
+    max-width:100%;
+    font-size:clamp(2.2rem,11vw,3rem);
+  }
+
+  .hero-sub{
+    max-width:100%;
+    font-size:1rem;
+  }
+
+  .hero-ctas{
+    width:100%;
+  }
+
+  .btn-primary,
+  .btn-ghost{
+    width:100%;
+  }
+
+}
+
+@media (max-width:380px){
+
+  .hero-art svg{
+    width:88%;
+    max-width:280px;
+  }
+
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.como{
+  padding:70px 0;
+  border-top:1px solid rgba(43,15,54,0.08);
+}
+
+.como-head{
+  max-width:46ch;
+  margin-bottom:44px;
+}
+
+.como-head h2{
+  font-size:clamp(1.8rem,3.2vw,2.4rem);
+}
+
+.como-head p{
+  margin-top:12px;
+  color:var(--roxo-700);
+  font-size:1.02rem;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+
+.step{
+  min-width:0;
+}
+
+@media (max-width:800px){
+
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+}
+
+.step{
+  background:#fff;
+  border-radius:var(--radius-md);
+  padding:26px 24px;
+  border:1px solid rgba(43,15,54,0.08);
+}
+
+.step-num{
+  font-family:'Fraunces',serif;
+  font-size:0.95rem;
+  color:var(--pink-dark);
+  font-weight:600;
+  margin-bottom:14px;
+}
+
+.step h3{
+  font-size:1.15rem;
+  margin-bottom:8px;
+}
+
+.step p{
+  color:var(--roxo-700);
+  font-size:0.95rem;
+  line-height:1.5;
+}
+
+
+/* =========================
+   BUILDER
+========================= */
+
+.builder{
+  padding:70px 0 90px;
+}
+
+.builder-head{
+  max-width:52ch;
+  margin-bottom:40px;
+}
+
+.builder-head h2{
+  font-size:clamp(1.8rem,3.2vw,2.4rem);
+}
+
+.builder-head p{
+  margin-top:12px;
+  color:var(--roxo-700);
+  font-size:1.02rem;
+}
+
+.builder-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 380px;
+  gap:32px;
+  align-items:start;
+  min-width:0;
+}
+
+.builder-grid > *{
+  min-width:0;
+}
+
+@media (max-width:900px){
+
+  .builder-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+.card{
+  background:#fff;
+  border-radius:var(--radius-lg);
+  border:1px solid rgba(43,15,54,0.08);
+  padding:30px;
+  margin-bottom:24px;
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
+}
+
+.card h3{
+  font-size:1.15rem;
+  margin-bottom:4px;
+}
+
+.card .card-hint{
+  color:var(--roxo-700);
+  font-size:0.88rem;
+  margin-bottom:20px;
+}
+
+.card .limit-hint{
+  display:inline-block;
+  max-width:100%;
+  margin-bottom:18px;
+  padding:6px 12px;
+  border-radius:100px;
+  background:rgba(193,62,122,0.09);
+  color:var(--pink-dark);
+  font-size:0.82rem;
+  font-weight:600;
+}
+
+
+/* =========================
+   BASE
+========================= */
+
+.base-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+
+@media (max-width:560px){
+
+  .base-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+.base-opt{
+  min-width:0;
+  border:1.5px solid rgba(43,15,54,0.15);
+  border-radius:14px;
+  padding:16px 12px;
+  text-align:center;
+  cursor:pointer;
+  transition:border-color .15s ease,background .15s ease;
+}
+
+.base-opt:hover{
+  border-color:var(--pink);
+}
+
+.base-opt.active{
+  border-color:var(--pink);
+  background:rgba(193,62,122,0.08);
+}
+
+.base-opt .b-label{
+  font-weight:600;
+  font-size:0.96rem;
+}
+
+.base-opt .b-sub{
+  font-size:0.8rem;
+  color:var(--roxo-700);
+  margin-top:3px;
+}
+
+
+/* =========================
+   SABORES
+========================= */
+
+.flavor-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px 14px;
+}
+
+@media (max-width:640px){
+
+  .flavor-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}
+
+@media (max-width:400px){
+
+  .flavor-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+.flavor-item{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-width:0;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid rgba(43,15,54,0.10);
+  cursor:pointer;
+  font-size:0.9rem;
+  transition:border-color .15s ease,background .15s ease;
+}
+
+.flavor-item span{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+
+.flavor-item:hover{
+  border-color:var(--pink);
+}
+
+.flavor-item.checked{
+  border-color:var(--pink);
+  background:rgba(193,62,122,0.07);
+}
+
+.flavor-item input{
+  accent-color:var(--pink);
+  width:15px;
+  height:15px;
+  flex-shrink:0;
+}
+
+
+/* =========================
+   TAMANHO
+========================= */
+
+.size-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+
+@media (max-width:560px){
+
+  .size-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+.size-opt{
+  min-width:0;
+  border:1.5px solid rgba(43,15,54,0.15);
+  border-radius:14px;
+  padding:16px 10px;
+  text-align:center;
+  cursor:pointer;
+  transition:border-color .15s ease,background .15s ease;
+  background:transparent;
+}
+
+.size-opt:hover{
+  border-color:var(--pink);
+}
+
+.size-opt.active{
+  border-color:var(--pink);
+  background:rgba(193,62,122,0.08);
+}
+
+.size-opt .sz-label{
+  font-weight:600;
+  font-size:0.98rem;
+}
+
+.size-opt .sz-price{
+  font-size:0.85rem;
+  color:var(--roxo-700);
+  margin-top:4px;
+}
+
+.size-opt .sz-limit{
+  font-size:0.76rem;
+  color:var(--pink-dark);
+  margin-top:6px;
+  font-weight:600;
+}
+
+
+/* =========================
+   COMPLEMENTOS / COBERTURAS
+========================= */
+
+.topping-group{
+  margin-bottom:22px;
+}
+
+.topping-group:last-child{
+  margin-bottom:0;
+}
+
+.topping-group h4{
+  font-family:'Work Sans',sans-serif;
+  font-weight:600;
+  font-size:0.9rem;
+  color:var(--pink-dark);
+  margin-bottom:12px;
+}
+
+.topping-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px 16px;
+}
+
+@media (max-width:500px){
+
+  .topping-list{
+    grid-template-columns:1fr;
+  }
+
+}
+
+.topping-item{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  min-width:0;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid rgba(43,15,54,0.10);
+  cursor:pointer;
+  font-size:0.92rem;
+  transition:border-color .15s ease,background .15s ease;
+}
+
+.topping-item:hover{
+  border-color:var(--pink);
+}
+
+.topping-item.checked{
+  border-color:var(--pink);
+  background:rgba(193,62,122,0.07);
+}
+
+.topping-item .t-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+}
+
+.topping-item .t-left span{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+
+.topping-item input{
+  accent-color:var(--pink);
+  width:16px;
+  height:16px;
+  flex-shrink:0;
+}
+
+.topping-item .t-price{
+  font-size:0.8rem;
+  white-space:nowrap;
+  color:var(--roxo-700);
+  flex-shrink:0;
+}
+
+.topping-item .t-price.free{
+  color:var(--verde);
+  font-weight:600;
+}
+
+.topping-item .t-price.extra{
+  color:var(--pink-dark);
+  font-weight:600;
+}
+
+
+/* =========================
+   OBSERVAÇÃO
+========================= */
+
+.obs textarea{
+  width:100%;
+  max-width:100%;
+  border:1.5px solid rgba(43,15,54,0.15);
+  border-radius:12px;
+  padding:12px 14px;
+  font-family:inherit;
+  font-size:0.92rem;
+  resize:vertical;
+  min-height:70px;
+  color:var(--roxo-900);
+}
+
+.obs textarea:focus{
+  outline:none;
+  border-color:var(--pink);
+}
+
+
+/* =========================
+   ENDEREÇO
+========================= */
+
+.addr-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px 16px;
+  min-width:0;
+}
+
+@media (max-width:560px){
+
+  .addr-grid{
+    grid-template-columns:1fr;
+  }
+
+  .field-street{
+    grid-column:auto !important;
+  }
+
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  position:relative;
+  min-width:0;
+}
+
+.field-street{
+  grid-column:span 2;
+}
+
+.field label{
+  font-size:0.8rem;
+  font-weight:600;
+  color:var(--roxo-700);
+}
+
+.field input{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  border:1.5px solid rgba(43,15,54,0.15);
+  border-radius:10px;
+  padding:11px 13px;
+  font-family:inherit;
+  font-size:0.92rem;
+  color:var(--roxo-900);
+  background:#fff;
+}
+
+.field input:focus{
+  outline:none;
+  border-color:var(--pink);
+}
+
+.field input:disabled{
+  background:rgba(43,15,54,0.04);
+  color:var(--roxo-700);
+}
+
+.field-status{
+  position:absolute;
+  right:12px;
+  top:34px;
+  max-width:50%;
+  font-size:0.72rem;
+  color:var(--pink-dark);
+  overflow-wrap:anywhere;
+}
+
+
+/* =========================
+   PAGAMENTO
+========================= */
+
+.pay-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+
+@media (max-width:520px){
+
+  .pay-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+.pay-opt{
+  min-width:0;
+  border:1.5px solid rgba(43,15,54,0.15);
+  border-radius:14px;
+  padding:14px 12px;
+  text-align:center;
+  cursor:pointer;
+  transition:border-color .15s ease,background .15s ease;
+  font-weight:600;
+  font-size:0.92rem;
+  overflow-wrap:anywhere;
+}
+
+.pay-opt:hover{
+  border-color:var(--pink);
+}
+
+.pay-opt.active{
+  border-color:var(--pink);
+  background:rgba(193,62,122,0.08);
+}
+
+.troco-box{
+  margin-top:18px;
+  padding-top:18px;
+  border-top:1px dashed rgba(43,15,54,0.15);
+}
+
+.troco-question{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:0.92rem;
+  font-weight:500;
+  cursor:pointer;
+}
+
+.troco-question input{
+  accent-color:var(--pink);
+  width:16px;
+  height:16px;
+}
+
+.field-troco{
+  margin-top:14px;
+  max-width:220px;
+}
+
+
+/* =========================
+   RESUMO
+========================= */
+
+.summary{
+  position:sticky;
+  top:96px;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  background:var(--roxo-900);
+  color:var(--creme);
+  border-radius:var(--radius-lg);
+  padding:28px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+.summary h3{
+  color:var(--creme);
+  font-size:1.1rem;
+  margin-bottom:16px;
+}
+
+.summary-line{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:10px;
+  min-width:0;
+  font-size:0.88rem;
+  padding:7px 0;
+  border-bottom:1px dashed rgba(251,243,231,0.18);
+  color:rgba(251,243,231,0.85);
+}
+
+.summary-line span{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+
+.summary-line span:first-child{
+  flex:1 1 auto;
+}
+
+.summary-line span:last-child{
+  flex:0 0 auto;
+  text-align:right;
+}
+
+.summary-line:last-of-type{
+  border-bottom:none;
+}
+
+.summary-empty{
+  color:rgba(251,243,231,0.55);
+  font-size:0.88rem;
+  padding:6px 0;
+  overflow-wrap:anywhere;
+}
+
+.summary-sub{
+  color:rgba(251,243,231,0.5);
+  font-size:0.76rem;
+  padding:4px 0 2px;
+  text-transform:uppercase;
+  letter-spacing:0.03em;
+}
+
+.summary-total{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:10px;
+  margin-top:16px;
+  padding-top:16px;
+  border-top:1px solid rgba(251,243,231,0.22);
+}
+
+.summary-total .lbl{
+  font-size:0.9rem;
+  color:rgba(251,243,231,0.7);
+}
+
+.summary-total .val{
+  font-family:'Fraunces',serif;
+  font-size:1.7rem;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+.summary .btn-send{
+  width:100%;
+  max-width:100%;
+  margin-top:20px;
+  background:var(--pink);
+  color:var(--creme);
+  border:none;
+  padding:15px 20px;
+  border-radius:100px;
+  font-weight:600;
+  font-size:1rem;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  transition:transform .15s ease,background .15s ease;
+}
+
+.summary .btn-send:hover{
+  background:#d1487f;
+  transform:translateY(-1px);
+}
+
+.summary .btn-send:disabled{
+  opacity:0.45;
+  cursor:not-allowed;
+  transform:none;
+}
+
+.summary .btn-send svg{
+  width:17px;
+  height:17px;
+  flex-shrink:0;
+}
+
+.summary-note{
+  font-size:0.76rem;
+  color:rgba(251,243,231,0.55);
+  margin-top:12px;
+  line-height:1.4;
+  overflow-wrap:anywhere;
+}
+
+@media (max-width:900px){
+
+  .summary{
+    position:static;
+    margin-top:8px;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .summary{
+    padding:22px 18px;
+    border-radius:22px;
+  }
+
+  .summary-line{
+    font-size:0.82rem;
+  }
+
+  .summary-total .val{
+    font-size:1.45rem;
+  }
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:var(--roxo-900);
+  color:var(--creme);
+  padding:56px 0 32px;
+  margin-top:20px;
+  overflow:hidden;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);
+  gap:36px;
+}
+
+.footer-grid > *{
+  min-width:0;
+}
+
+@media (max-width:700px){
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+}
+
+.footer-grid h4{
+  font-family:'Fraunces',serif;
+  font-size:1.05rem;
+  margin-bottom:14px;
+  color:var(--creme);
+}
+
+.footer-grid p,
+.footer-grid a{
+  color:rgba(251,243,231,0.72);
+  font-size:0.92rem;
+  line-height:1.7;
+  text-decoration:none;
+  overflow-wrap:anywhere;
+}
+
+.footer-grid a:hover{
+  color:var(--creme);
+}
+
+.footer-bottom{
+  margin-top:44px;
+  padding-top:22px;
+  border-top:1px solid rgba(251,243,231,0.14);
+  font-size:0.82rem;
+  color:rgba(251,243,231,0.5);
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+
+/* =========================
+   TOAST
+========================= */
+
+.toast{
+  position:fixed;
+  bottom:26px;
+  left:50%;
+  width:max-content;
+  max-width:calc(100% - 30px);
+  transform:translateX(-50%) translateY(20px);
+  background:var(--roxo-900);
+  color:var(--creme);
+  padding:14px 22px;
+  border-radius:100px;
+  font-size:0.9rem;
+  font-weight:500;
+  box-shadow:var(--shadow);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .25s ease,transform .25s ease;
+  z-index:100;
+  text-align:center;
+}
+
+.toast.show{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+
+
+/* =========================
+   CELULAR PEQUENO
+========================= */
+
+@media (max-width:380px){
+
+  .card{
+    padding:20px 16px;
+    border-radius:20px;
+  }
+
+  .como,
+  .builder{
+    padding-top:45px;
+  }
+
+  .hero-ctas{
+    gap:10px;
+  }
+
+  .btn-primary,
+  .btn-ghost{
+    padding:13px 18px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="wrap header-inner">
+
+    <a href="#topo" class="logo">
+      <span class="logo-mark"></span>
+      Rei do Açai
+    </a>
+
+    <nav>
+
+      <a href="#como" class="nav-link">Como funciona</a>
+
+      <a href="#montar" class="nav-link">Montar pedido</a>
+
+      <a href="#contato" class="nav-link">Contato</a>
+
+      <a class="btn-whats" href="#montar">
+
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.19 8.19 0 0 1-1.26-4.37c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.82 2.42a8.16 8.16 0 0 1 2.41 5.81c0 4.53-3.69 8.21-8.24 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01a.9.9 0 0 0-.66.31c-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/>
+        </svg>
+
+        WhatsApp
+
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main id="topo">
+
+  <!-- HERO -->
+
+  <section class="hero wrap">
+
+    <div>
+
+      <div class="hero-eyebrow">
+        Açaí, sorvete ou os dois juntos — do seu jeito
+      </div>
+
+      <h1>
+        Faça o pedido pelo Site, rápido e prático!
+      </h1>
+
+      <p class="hero-sub">
+        Escolha o copo, os complementos e a cobertura — mais de 10 sabores de sorvetes disponíveis. Envie o pedido direto pra gente.
+      </p>
+
+      <div class="hero-ctas">
+
+        <a href="#montar" class="btn-primary">
+
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+
+          Montar meu pedido
+
+        </a>
+
+        <a href="#como" class="btn-ghost">
+          Como funciona
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-art">
+
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+
+        <ellipse cx="200" cy="330" rx="120" ry="18"
+          fill="var(--roxo-900)" opacity="0.08"/>
+
+        <path
+          d="M75 190 C75 140 130 105 200 105 C270 105 325 140 325 190 L315 265 C310 305 260 330 200 330 C140 330 90 305 85 265 Z"
+          fill="var(--creme)"
+          stroke="var(--roxo-900)"
+          stroke-width="4"
+        />
+
+        <path
+          d="M90 195 C90 150 138 118 200 118 C262 118 310 150 310 195 C310 210 262 222 200 222 C138 222 90 210 90 195 Z"
+          fill="var(--roxo-700)"
+        />
+
+        <path
+          d="M90 195 C90 150 138 118 200 118 C262 118 310 150 310 195 C310 210 262 222 200 222 C138 222 90 210 90 195 Z"
+          fill="var(--roxo-500)"
+          opacity="0.5"
+        />
+
+        <circle cx="150" cy="165" r="9" fill="#F4C6DC"/>
+        <circle cx="225" cy="150" r="7" fill="#F4C6DC"/>
+        <circle cx="255" cy="180" r="8" fill="#F4C6DC"/>
+        <circle cx="180" cy="140" r="6" fill="#F4C6DC"/>
+        <circle cx="120" cy="180" r="6" fill="#F4C6DC"/>
+
+        <path
+          d="M120 150 C130 120 150 100 180 90"
+          stroke="var(--verde)"
+          stroke-width="6"
+          stroke-linecap="round"
+          fill="none"
+        />
+
+        <ellipse
+          cx="182"
+          cy="86"
+          rx="14"
+          ry="8"
+          fill="var(--verde)"
+          transform="rotate(-30 182 86)"
+        />
+
+        <circle cx="230" cy="185" r="11" fill="#FBEBD3"/>
+        <circle cx="200" cy="200" r="10" fill="#FBEBD3"/>
+        <circle cx="170" cy="188" r="9" fill="#FBEBD3"/>
+
+        <g opacity="0.9">
+          <circle cx="140" cy="205" r="3.5" fill="var(--mel)"/>
+          <circle cx="255" cy="205" r="3.5" fill="var(--mel)"/>
+          <circle cx="200" cy="150" r="3.5" fill="var(--mel)"/>
+        </g>
+
+      </svg>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMO FUNCIONA -->
+
+  <section class="como" id="como">
+
+    <div class="wrap">
+
+      <div class="como-head">
+
+        <h2>
+          Faça seu pedido em poucos passos
+        </h2>
+
+        <p>
+          Sem app, sem login. Você monta aqui, a gente recebe pronto no WhatsApp e já entra na fila de preparo.
+        </p>
+
+      </div>
+
+
+      <div class="steps">
+
+        <div class="step">
+
+          <div class="step-num">01</div>
+
+          <h3>
+            Escolha açaí, sorvete ou os dois
+          </h3>
+
+          <p>
+            Misturar açaí com sorvete não custa nada a mais. Se for sorvete, escolha entre mais de 10 sabores.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-num">02</div>
+
+          <h3>
+            Monte com complementos e coberturas
+          </h3>
+
+          <p>
+            Cada tamanho já inclui uma quantidade de complementos, e sempre 2 coberturas. Quer mais? É só pagar o extra.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-num">03</div>
+
+          <h3>
+            Envie pelo WhatsApp
+          </h3>
+
+          <p>
+            Um clique abre a conversa já com seu pedido certinho, endereço e forma de pagamento.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BUILDER -->
+
+  <section class="builder" id="montar">
+
+    <div class="wrap">
+
+      <div class="builder-head">
+
+        <h2>
+          Monte o seu pedido
+        </h2>
+
+        <p>
+          Escolha a base, o tamanho, os complementos e as coberturas. O resumo ao lado se atualiza automaticamente, com os valores extras que forem passando dos limites.
+        </p>
+
+      </div>
+
+
+      <div class="builder-grid">
+
+        <div>
+
+          <div class="card">
+
+            <h3>
+              Açaí, sorvete ou os dois?
+            </h3>
+
+            <p class="card-hint">
+              Misturar açaí com sorvete não tem custo extra
+            </p>
+
+            <div class="base-grid" id="baseGrid"></div>
+
+          </div>
+
+
+          <div class="card" id="flavorCard" style="display:none;">
+
+            <h3>
+              Sabor(es) do sorvete
+            </h3>
+
+            <p class="card-hint">
+              Escolha um ou mais sabores
+            </p>
+
+            <div class="flavor-grid" id="flavorGrid"></div>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Tamanho do copo
+            </h3>
+
+            <p class="card-hint">
+              Cada tamanho já vem com uma quantidade de complementos
+            </p>
+
+            <div class="size-grid" id="sizeGrid"></div>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Complementos
+            </h3>
+
+            <div class="limit-hint" id="complementLimitHint"></div>
+
+            <div id="complementGroups"></div>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Coberturas
+            </h3>
+
+            <div class="limit-hint" id="coberturaLimitHint"></div>
+
+            <div id="coberturaGroups"></div>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Endereço de entrega
+            </h3>
+
+            <p class="card-hint">
+              Digite o CEP que a gente preenche a rua e o bairro pra você
+            </p>
+
+
+            <div class="addr-grid">
+
+              <div class="field field-cep">
+
+                <label for="cepField">
+                  CEP
+                </label>
+
+                <input
+                  type="text"
+                  id="cepField"
+                  placeholder="00000-000"
+                  maxlength="9"
+                >
+
+                <span
+                  class="field-status"
+                  id="cepStatus"
+                ></span>
+
+              </div>
+
+
+              <div class="field field-num">
+
+                <label for="numField">
+                  Número
+                </label>
+
+                <input
+                  type="text"
+                  id="numField"
+                  placeholder="123"
+                >
+
+              </div>
+
+
+              <div class="field field-street">
+
+                <label for="streetField">
+                  Rua
+                </label>
+
+                <input
+                  type="text"
+                  id="streetField"
+                  placeholder="Preenchido automaticamente"
+                >
+
+              </div>
+
+
+              <div class="field field-comp">
+
+                <label for="compField">
+                  Complemento
+                </label>
+
+                <input
+                  type="text"
+                  id="compField"
+                  placeholder="Apto, bloco... (opcional)"
+                >
+
+              </div>
+
+
+              <div class="field field-neigh">
+
+                <label for="neighField">
+                  Bairro
+                </label>
+
+                <input
+                  type="text"
+                  id="neighField"
+                  placeholder="Preenchido automaticamente"
+                >
+
+              </div>
+
+
+              <div class="field field-city">
+
+                <label for="cityField">
+                  Cidade / UF
+                </label>
+
+                <input
+                  type="text"
+                  id="cityField"
+                  placeholder="Preenchido automaticamente"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Forma de pagamento
+            </h3>
+
+            <p class="card-hint">
+              Selecione uma
+            </p>
+
+            <div class="pay-grid" id="payGrid"></div>
+
+
+            <div
+              class="troco-box"
+              id="trocoBox"
+              style="display:none;"
+            >
+
+              <label class="troco-question">
+
+                <input
+                  type="checkbox"
+                  id="trocoCheck"
+                >
+
+                Precisa de troco?
+
+              </label>
+
+
+              <div
+                class="field field-troco"
+                id="trocoAmountWrap"
+                style="display:none;"
+              >
+
+                <label for="trocoField">
+                  Troco para quanto?
+                </label>
+
+                <input
+                  type="text"
+                  id="trocoField"
+                  placeholder="Ex: 50,00"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card obs">
+
+            <h3>
+              Alguma observação?
+            </h3>
+
+            <p class="card-hint">
+              Ex: pouco açúcar, entregar no portão azul...
+            </p>
+
+            <textarea
+              id="obsField"
+              placeholder="Escreva aqui, se precisar"
+            ></textarea>
+
+          </div>
+
+        </div>
+
+
+        <aside class="summary">
+
+          <h3>
+            Seu pedido
+          </h3>
+
+          <div id="summaryLines">
+
+            <div class="summary-empty">
+              Escolha a base para começar
+            </div>
+
+          </div>
+
+
+          <div class="summary-total">
+
+            <span class="lbl">
+              Total
+            </span>
+
+            <span class="val" id="totalValue">
+              R$ 0,00
+            </span>
+
+          </div>
+
+
+          <button
+            class="btn-send"
+            id="sendBtn"
+            disabled
+          >
+
+            <svg viewBox="0 0 24 24" fill="currentColor">
+
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.19 8.19 0 0 1-1.26-4.37c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.82 2.42a8.16 8.16 0 0 1 2.41 5.81c0 4.53-3.69 8.21-8.24 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01a.9.9 0 0 0-.66.31c-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/>
+
+            </svg>
+
+            Enviar pedido no WhatsApp
+
+          </button>
+
+
+          <p class="summary-note">
+            Ao enviar, o WhatsApp abre com seu pedido já escrito — é só conferir e mandar.
+          </p>
+
+        </aside>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer id="contato">
+
+  <div class="wrap footer-grid">
+
+    <div>
+
+      <h4>
+        Rei do Açai
+      </h4>
+
+      <p>
+        Açaí e sorvete batidos na hora, coberturas fresquinhas e entrega rápida no bairro. Feito com fruta de verdade, sem enrolação.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        Atendimento
+      </h4>
+
+      <p>
+        Terça a domingo<br>
+        19h às 00h30
+      </p>
+
+      <p style="margin-top:10px;">
+        <a href="#montar">
+          Fazer pedido →
+        </a>
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        Contato
+      </h4>
+
+      <p>
+        <a href="#" id="footerWhats">
+          WhatsApp: (13) 99999-9999
+        </a>
+      </p>
+
+      <p style="margin-top:6px;">
+        Rua Newton Classe de Moura, 500<br>
+        São Vicente, SP
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="wrap footer-bottom">
+
+    <span>
+      © 2026 Rei do Açaí
+    </span>
+
+  </div>
+
+</footer>
+
+
+<div class="toast" id="toast">
+  Pedido pronto! Abrindo o WhatsApp...
+</div>
+
+
+<script>
+
+const WHATSAPP_NUMBER = "5513999999999";
+
+const COMPLEMENTO_EXTRA_PRICE = 2.00;
+const COBERTURA_LIMIT = 2;
+const COBERTURA_EXTRA_PRICE = 3.00;
+const SORVETE_ONLY_FREE_FLAVORS = 2;
+const SORVETE_FLAVOR_EXTRA_PRICE = 5.00;
+
+const SIZES = [
+
+  {
+    id:"500",
+    label:"500ml",
+    price:15.90,
+    complementLimit:3
+  },
+
+  {
+    id:"700",
+    label:"700ml",
+    price:22.90,
+    complementLimit:5
+  },
+
+  {
+    id:"1000",
+    label:"1 litro",
+    price:27.90,
+    complementLimit:7
+  }
+
+];
+
+const BASE_OPTIONS = [
+
+  {
+    id:"acai",
+    label:"Açaí",
+    sub:"só açaí"
+  },
+
+  {
+    id:"sorvete",
+    label:"Sorvete",
+    sub:"no lugar do açaí"
+  },
+
+  {
+    id:"ambos",
+    label:"Açaí + Sorvete",
+    sub:"combinados"
+  }
+
+];
+
+const SORVETE_FLAVORS = [
+
+  "Chocolate",
+  "Morango",
+  "Flocos",
+  "Creme",
+  "Napolitano",
+  "Doce de Leite",
+  "Ninho",
+  "Cookies & Cream",
+  "Chocolate Belga",
+  "Maracujá",
+  "Limão",
+  "Coco",
+  "Pistache"
+
+].map(name => ({
+
+  id:name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .replace(/[^a-z0-9]+/g,"_"),
+
+  label:name
+
+}));
+
+
+const COMPLEMENTO_GROUPS = [
+
+  {
+    items:[
+      "Banana",
+      "Morango",
+      "Kiwi",
+      "Manga",
+      "Uva",
+      "Abacaxi",
+      "Granola",
+      "Leite em pó",
+      "Castanha picada",
+      "Ovomaltine",
+      "Farinha láctea",
+      "Amendoim triturado",
+      "Jujuba",
+      "KitKat picado"
+    ]
+  }
+
+].map(g => ({
+  name:g.name,
+  items:g.items.map(toItem)
+}));
+
+
+const COBERTURA_GROUPS = [
+
+  {
+    items:[
+      "Leite condensado",
+      "Nutella",
+      "Creme de leite ninho",
+      "Doce de leite",
+      "Creme de avelã",
+      "Paçoca cremosa",
+      "Mel",
+      "Calda de morango",
+      "Calda de chocolate",
+      "ChocoMenta"
+    ]
+  }
+
+].map(g => ({
+  name:g.name,
+  items:g.items.map(toItem)
+}));
+
+
+function toItem(label){
+
+  const id = label
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .replace(/[^a-z0-9]+/g,"_");
+
+  return {
+    id,
+    label
+  };
+
+}
+
+
+const PAYMENT_METHODS = [
+
+  {
+    id:"pix",
+    label:"Pix"
+  },
+
+  {
+    id:"cartao",
+    label:"Cartão na entrega"
+  },
+
+  {
+    id:"dinheiro",
+    label:"Dinheiro"
+  }
+
+];
+
+
+const state = {
+
+  baseType:null,
+  flavors:new Set(),
+  sizeId:null,
+  complementos:new Set(),
+  coberturas:new Set(),
+  paymentId:null
+
+};
+
+
+const baseGrid =
+  document.getElementById("baseGrid");
+
+const flavorCard =
+  document.getElementById("flavorCard");
+
+const flavorGrid =
+  document.getElementById("flavorGrid");
+
+const sizeGrid =
+  document.getElementById("sizeGrid");
+
+const complementGroupsEl =
+  document.getElementById("complementGroups");
+
+const complementLimitHint =
+  document.getElementById("complementLimitHint");
+
+const coberturaGroupsEl =
+  document.getElementById("coberturaGroups");
+
+const coberturaLimitHint =
+  document.getElementById("coberturaLimitHint");
+
+const summaryLines =
+  document.getElementById("summaryLines");
+
+const totalValueEl =
+  document.getElementById("totalValue");
+
+const sendBtn =
+  document.getElementById("sendBtn");
+
+const obsField =
+  document.getElementById("obsField");
+
+const toast =
+  document.getElementById("toast");
+
+const cepField =
+  document.getElementById("cepField");
+
+const cepStatus =
+  document.getElementById("cepStatus");
+
+const streetField =
+  document.getElementById("streetField");
+
+const numField =
+  document.getElementById("numField");
+
+const compField =
+  document.getElementById("compField");
+
+const neighField =
+  document.getElementById("neighField");
+
+const cityField =
+  document.getElementById("cityField");
+
+const payGrid =
+  document.getElementById("payGrid");
+
+const trocoBox =
+  document.getElementById("trocoBox");
+
+const trocoCheck =
+  document.getElementById("trocoCheck");
+
+const trocoAmountWrap =
+  document.getElementById("trocoAmountWrap");
+
+const trocoField =
+  document.getElementById("trocoField");
+
+
+function fmt(v){
+
+  return "R$ " +
+    v.toFixed(2).replace(".",",");
+
+}
+
+
+/* BASE */
+
+function renderBase(){
+
+  baseGrid.innerHTML = "";
+
+  BASE_OPTIONS.forEach(opt => {
+
+    const el =
+      document.createElement("div");
+
+    el.className =
+      "base-opt" +
+      (state.baseType === opt.id
+        ? " active"
+        : "");
+
+    el.innerHTML = `
+      <div class="b-label">
+        ${opt.label}
+      </div>
+
+      <div class="b-sub">
+        ${opt.sub}
+      </div>
+    `;
+
+    el.addEventListener("click",() => {
+
+      const changingType =
+        state.baseType !== opt.id;
+
+      state.baseType = opt.id;
+
+      flavorCard.style.display =
+        (
+          opt.id === "sorvete" ||
+          opt.id === "ambos"
+        )
+        ? "block"
+        : "none";
+
+      if(opt.id === "acai"){
+
+        state.flavors.clear();
+
+      }
+
+      else if(
+        opt.id === "ambos" &&
+        changingType &&
+        state.flavors.size > 1
+      ){
+
+        const first =
+          Array.from(state.flavors)[0];
+
+        state.flavors.clear();
+
+        if(first){
+          state.flavors.add(first);
+        }
+
+      }
+
+      renderBase();
+      renderFlavors();
+      renderSummary();
+
+    });
+
+    baseGrid.appendChild(el);
+
+  });
+
+}
+
+
+/* SABORES */
+
+function renderFlavors(){
+
+  const isCombo =
+    state.baseType === "ambos";
+
+  const orderedIds =
+    Array.from(state.flavors);
+
+  const hintEl =
+    flavorCard.querySelector(".card-hint");
+
+  if(isCombo){
+
+    hintEl.textContent =
+      "Escolha 1 sabor para acompanhar o açaí";
+
+  }
+
+  else{
+
+    hintEl.textContent =
+      `Até ${SORVETE_ONLY_FREE_FLAVORS} sabores por copo — a partir do ${SORVETE_ONLY_FREE_FLAVORS + 1}º, cada sabor extra custa ${fmt(SORVETE_FLAVOR_EXTRA_PRICE)}`;
+
+  }
+
+  flavorGrid.innerHTML = "";
+
+  SORVETE_FLAVORS.forEach(fl => {
+
+    const checked =
+      state.flavors.has(fl.id);
+
+    let tagHtml = "";
+
+    if(!isCombo && checked){
+
+      const posIndex =
+        orderedIds.indexOf(fl.id);
+
+      const isFree =
+        posIndex < SORVETE_ONLY_FREE_FLAVORS;
+
+      tagHtml = `
+        <span
+          class="t-price ${isFree ? "free" : "extra"}"
+          style="margin-left:auto;"
+        >
+          ${isFree ? "" : "+" + fmt(SORVETE_FLAVOR_EXTRA_PRICE)}
+        </span>
+      `;
+
+    }
+
+    const row =
+      document.createElement("label");
+
+    row.className =
+      "flavor-item" +
+      (checked ? " checked" : "");
+
+    row.innerHTML = `
+      <input
+        type="checkbox"
+        data-id="${fl.id}"
+        ${checked ? "checked" : ""}
+      >
+
+      <span>
+        ${fl.label}
+      </span>
+
+      ${tagHtml}
+    `;
+
+    const checkbox =
+      row.querySelector("input");
+
+    checkbox.addEventListener("change",() => {
+
+      if(checkbox.checked){
+
+        if(isCombo){
+          state.flavors.clear();
+        }
+
+        state.flavors.add(fl.id);
+
+      }
+
+      else{
+
+        state.flavors.delete(fl.id);
+
+      }
+
+      renderFlavors();
+      renderSummary();
+
+    });
+
+    flavorGrid.appendChild(row);
+
+  });
+
+}
+
+
+function getFlavorExtraCount(){
+
+  if(state.baseType !== "sorvete"){
+    return 0;
+  }
+
+  return Math.max(
+    0,
+    state.flavors.size -
+    SORVETE_ONLY_FREE_FLAVORS
+  );
+
+}
+
+
+/* TAMANHO */
+
+function renderSizes(){
+
+  sizeGrid.innerHTML = "";
+
+  SIZES.forEach(sz => {
+
+    const el =
+      document.createElement("div");
+
+    el.className =
+      "size-opt" +
+      (state.sizeId === sz.id
+        ? " active"
+        : "");
+
+    el.innerHTML = `
+      <div class="sz-label">
+        ${sz.label}
+      </div>
+
+      <div class="sz-price">
+        ${fmt(sz.price)}
+      </div>
+
+      <div class="sz-limit">
+        ${sz.complementLimit} complementos
+      </div>
+    `;
+
+    el.addEventListener("click",() => {
+
+      state.sizeId = sz.id;
+
+      renderSizes();
+      renderComplementos();
+      renderCoberturas();
+      renderSummary();
+
+    });
+
+    sizeGrid.appendChild(el);
+
+  });
+
+}
+
+
+function getSelectedSize(){
+
+  return SIZES.find(
+    s => s.id === state.sizeId
+  ) || null;
+
+}
+
+
+/* COMPLEMENTOS */
+
+function getComplementLimit(){
+
+  const size =
+    getSelectedSize();
+
+  return size
+    ? size.complementLimit
+    : 0;
+
+}
+
+
+function renderComplementos(){
+
+  const limit =
+    getComplementLimit();
+
+  const size =
+    getSelectedSize();
+
+  complementLimitHint.textContent =
+    size
+
+    ? `${Math.min(
+        state.complementos.size,
+        limit
+      )}/${limit} usados — extras a ${fmt(COMPLEMENTO_EXTRA_PRICE)} cada`
+
+    : "Escolha o tamanho para ver a quantidade de complementos";
+
+
+  complementGroupsEl.innerHTML = "";
+
+  const orderedIds =
+    Array.from(state.complementos);
+
+  COMPLEMENTO_GROUPS.forEach(group => {
+
+    const wrap =
+      document.createElement("div");
+
+    wrap.className =
+      "topping-group";
+
+    const title =
+      document.createElement("h4");
+
+    title.textContent =
+      group.name;
+
+    wrap.appendChild(title);
+
+    const list =
+      document.createElement("div");
+
+    list.className =
+      "topping-list";
+
+    group.items.forEach(item => {
+
+      const checked =
+        state.complementos.has(item.id);
+
+      const posIndex =
+        orderedIds.indexOf(item.id);
+
+      const isFree =
+        checked &&
+        posIndex < limit;
+
+      const tagText =
+        !checked
+          ? ""
+          : (
+              isFree
+                ? ""
+                : `+ ${fmt(COMPLEMENTO_EXTRA_PRICE)}`
+            );
+
+      const tagClass =
+        !checked
+          ? ""
+          : (
+              isFree
+                ? "free"
+                : "extra"
+            );
+
+      const row =
+        document.createElement("label");
+
+      row.className =
+        "topping-item" +
+        (checked ? " checked" : "");
+
+      row.innerHTML = `
+
+        <span class="t-left">
+
+          <input
+            type="checkbox"
+            data-id="${item.id}"
+            ${checked ? "checked" : ""}
+          >
+
+          <span>
+            ${item.label}
+          </span>
+
+        </span>
+
+        <span class="t-price ${tagClass}">
+          ${tagText}
+        </span>
+
+      `;
+
+      const checkbox =
+        row.querySelector("input");
+
+      checkbox.addEventListener("change",() => {
+
+        if(checkbox.checked){
+
+          state.complementos.add(item.id);
+
+        }
+
+        else{
+
+          state.complementos.delete(item.id);
+
+        }
+
+        renderComplementos();
+        renderSummary();
+
+      });
+
+      list.appendChild(row);
+
+    });
+
+    wrap.appendChild(list);
+
+    complementGroupsEl.appendChild(wrap);
+
+  });
+
+}
+
+
+function getComplementExtraCount(){
+
+  return Math.max(
+    0,
+    state.complementos.size -
+    getComplementLimit()
+  );
+
+}
+
+
+/* COBERTURAS */
+
+function renderCoberturas(){
+
+  coberturaLimitHint.textContent =
+    `${Math.min(
+      state.coberturas.size,
+      COBERTURA_LIMIT
+    )}/${COBERTURA_LIMIT} usadas — extras a ${fmt(COBERTURA_EXTRA_PRICE)} cada`;
+
+
+  coberturaGroupsEl.innerHTML = "";
+
+  const orderedIds =
+    Array.from(state.coberturas);
+
+  COBERTURA_GROUPS.forEach(group => {
+
+    const wrap =
+      document.createElement("div");
+
+    wrap.className =
+      "topping-group";
+
+    const title =
+      document.createElement("h4");
+
+    title.textContent =
+      group.name;
+
+    wrap.appendChild(title);
+
+    const list =
+      document.createElement("div");
+
+    list.className =
+      "topping-list";
+
+    group.items.forEach(item => {
+
+      const checked =
+        state.coberturas.has(item.id);
+
+      const posIndex =
+        orderedIds.indexOf(item.id);
+
+      const isFree =
+        checked &&
+        posIndex < COBERTURA_LIMIT;
+
+      const tagText =
+        !checked
+          ? ""
+          : (
+              isFree
+                ? ""
+                : `+ ${fmt(COBERTURA_EXTRA_PRICE)}`
+            );
+
+      const tagClass =
+        !checked
+          ? ""
+          : (
+              isFree
+                ? "free"
+                : "extra"
+            );
+
+      const row =
+        document.createElement("label");
+
+      row.className =
+        "topping-item" +
+        (checked ? " checked" : "");
+
+      row.innerHTML = `
+
+        <span class="t-left">
+
+          <input
+            type="checkbox"
+            data-id="${item.id}"
+            ${checked ? "checked" : ""}
+          >
+
+          <span>
+            ${item.label}
+          </span>
+
+        </span>
+
+        <span class="t-price ${tagClass}">
+          ${tagText}
+        </span>
+
+      `;
+
+      const checkbox =
+        row.querySelector("input");
+
+      checkbox.addEventListener("change",() => {
+
+        if(checkbox.checked){
+
+          state.coberturas.add(item.id);
+
+        }
+
+        else{
+
+          state.coberturas.delete(item.id);
+
+        }
+
+        renderCoberturas();
+        renderSummary();
+
+      });
+
+      list.appendChild(row);
+
+    });
+
+    wrap.appendChild(list);
+
+    coberturaGroupsEl.appendChild(wrap);
+
+  });
+
+}
+
+
+function getCoberturaExtraCount(){
+
+  return Math.max(
+    0,
+    state.coberturas.size -
+    COBERTURA_LIMIT
+  );
+
+}
+
+
+/* CEP */
+
+function onlyDigits(str){
+
+  return (str || "")
+    .replace(/\D/g,"");
+
+}
+
+
+cepField.addEventListener("input",() => {
+
+  let digits =
+    onlyDigits(
+      cepField.value
+    ).slice(0,8);
+
+  cepField.value =
+    digits.length > 5
+      ? digits.slice(0,5) +
+        "-" +
+        digits.slice(5)
+      : digits;
+
+  if(digits.length === 8){
+
+    buscarCep(digits);
+
+  }
+
+  renderSummary();
+
+});
+
+
+async function buscarCep(cep){
+
+  cepStatus.textContent =
+    "buscando...";
+
+  streetField.disabled = true;
+  neighField.disabled = true;
+  cityField.disabled = true;
+
+  try{
+
+    const res =
+      await fetch(
+        `https://viacep.com.br/ws/${cep}/json/`
+      );
+
+    const data =
+      await res.json();
+
+    if(data.erro){
+
+      cepStatus.textContent =
+        "CEP não encontrado";
+
+      streetField.value = "";
+      neighField.value = "";
+      cityField.value = "";
+
+    }
+
+    else{
+
+      streetField.value =
+        data.logradouro || "";
+
+      neighField.value =
+        data.bairro || "";
+
+      cityField.value =
+        data.localidade &&
+        data.uf
+
+        ? `${data.localidade} / ${data.uf}`
+
+        : "";
+
+      cepStatus.textContent = "";
+
+      numField.focus();
+
+    }
+
+  }
+
+  catch(err){
+
+    cepStatus.textContent =
+      "sem conexão, preencha manual";
+
+  }
+
+  finally{
+
+    streetField.disabled = false;
+    neighField.disabled = false;
+    cityField.disabled = false;
+
+    renderSummary();
+
+  }
+
+}
+
+
+[
+  streetField,
+  numField,
+  compField,
+  neighField,
+  cityField
+].forEach(f => {
+
+  f.addEventListener(
+    "input",
+    renderSummary
+  );
+
+});
+
+
+/* PAGAMENTO */
+
+function renderPayment(){
+
+  payGrid.innerHTML = "";
+
+  PAYMENT_METHODS.forEach(pm => {
+
+    const el =
+      document.createElement("div");
+
+    el.className =
+      "pay-opt" +
+      (
+        state.paymentId === pm.id
+          ? " active"
+          : ""
+      );
+
+    el.textContent =
+      pm.label;
+
+    el.addEventListener("click",() => {
+
+      state.paymentId =
+        pm.id;
+
+      renderPayment();
+
+      trocoBox.style.display =
+        pm.id === "dinheiro"
+          ? "block"
+          : "none";
+
+      if(pm.id !== "dinheiro"){
+
+        trocoCheck.checked = false;
+
+        trocoAmountWrap.style.display =
+          "none";
+
+        trocoField.value =
+          "";
+
+      }
+
+      renderSummary();
+
+    });
+
+    payGrid.appendChild(el);
+
+  });
+
+}
+
+
+trocoCheck.addEventListener("change",() => {
+
+  trocoAmountWrap.style.display =
+    trocoCheck.checked
+      ? "flex"
+      : "none";
+
+  if(!trocoCheck.checked){
+
+    trocoField.value = "";
+
+  }
+
+  renderSummary();
+
+});
+
+
+trocoField.addEventListener(
+  "input",
+  renderSummary
+);
+
+
+/* ENDEREÇO */
+
+function getAddress(){
+
+  return {
+
+    cep:cepField.value.trim(),
+
+    street:
+      streetField.value.trim(),
+
+    number:
+      numField.value.trim(),
+
+    complement:
+      compField.value.trim(),
+
+    neighborhood:
+      neighField.value.trim(),
+
+    city:
+      cityField.value.trim()
+
+  };
+
+}
+
+
+function isAddressComplete(addr){
+
+  return (
+    addr.cep.length >= 8 &&
+    addr.street &&
+    addr.number &&
+    addr.neighborhood
+  );
+
+}
+
+
+/* TOTAL */
+
+function calcTotal(){
+
+  const size =
+    getSelectedSize();
+
+  if(!size){
+    return 0;
+  }
+
+  const base =
+    size.price;
+
+  const complementExtra =
+    getComplementExtraCount() *
+    COMPLEMENTO_EXTRA_PRICE;
+
+  const coberturaExtra =
+    getCoberturaExtraCount() *
+    COBERTURA_EXTRA_PRICE;
+
+  const flavorExtra =
+    getFlavorExtraCount() *
+    SORVETE_FLAVOR_EXTRA_PRICE;
+
+  return (
+    base +
+    complementExtra +
+    coberturaExtra +
+    flavorExtra
+  );
+
+}
+
+
+function baseLabel(){
+
+  const opt =
+    BASE_OPTIONS.find(
+      o => o.id === state.baseType
+    );
+
+  return opt
+    ? opt.label
+    : "";
+
+}
+
+
+function selectedFlavorLabels(){
+
+  return Array
+    .from(state.flavors)
+    .map(
+      id =>
+        SORVETE_FLAVORS.find(
+          f => f.id === id
+        )
+    )
+    .filter(Boolean)
+    .map(f => f.label);
+
+}
+
+
+function selectedComplementLabels(){
+
+  const all =
+    COMPLEMENTO_GROUPS.flatMap(
+      g => g.items
+    );
+
+  return Array
+    .from(state.complementos)
+    .map(
+      id =>
+        all.find(
+          i => i.id === id
+        )
+    )
+    .filter(Boolean)
+    .map(i => i.label);
+
+}
+
+
+function selectedCoberturaLabels(){
+
+  const all =
+    COBERTURA_GROUPS.flatMap(
+      g => g.items
+    );
+
+  return Array
+    .from(state.coberturas)
+    .map(
+      id =>
+        all.find(
+          i => i.id === id
+        )
+    )
+    .filter(Boolean)
+    .map(i => i.label);
+
+}
+
+
+/* RESUMO */
+
+function renderSummary(){
+
+  const size =
+    getSelectedSize();
+
+  const addr =
+    getAddress();
+
+  if(!state.baseType || !size){
+
+    summaryLines.innerHTML = `
+
+      <div class="summary-empty">
+        ${
+          !state.baseType
+            ? "Escolha a base para começar"
+            : "Escolha um tamanho"
+        }
+      </div>
+
+    `;
+
+    totalValueEl.textContent =
+      fmt(0);
+
+    sendBtn.disabled =
+      true;
+
+    return;
+
+  }
+
+
+  let html = `
+
+    <div class="summary-line">
+
+      <span>
+        Base
+      </span>
+
+      <span>
+        ${baseLabel()}
+      </span>
+
+    </div>
+
+  `;
+
+
+  if(state.baseType !== "acai"){
+
+    const flavors =
+      selectedFlavorLabels();
+
+    const flavorExtraCount =
+      getFlavorExtraCount();
+
+    const flavorText =
+      flavors.length
+        ? flavors.join(", ")
+        : "—";
+
+    html += `
+
+      <div class="summary-line">
+
+        <span>
+          Sabor(es)
+        </span>
+
+        <span>
+          ${flavorText}
+
+          ${
+            flavorExtraCount > 0
+              ? " (+" +
+                fmt(
+                  flavorExtraCount *
+                  SORVETE_FLAVOR_EXTRA_PRICE
+                ) +
+                ")"
+              : ""
+          }
+
+        </span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  html += `
+
+    <div class="summary-line">
+
+      <span>
+        Copo ${size.label}
+      </span>
+
+      <span>
+        ${fmt(size.price)}
+      </span>
+
+    </div>
+
+  `;
+
+
+  const complementLabels =
+    selectedComplementLabels();
+
+  const complementExtraCount =
+    getComplementExtraCount();
+
+
+  html += `
+
+    <div class="summary-sub">
+
+      Complementos
+      (${Math.min(
+        state.complementos.size,
+        getComplementLimit()
+      )}/${getComplementLimit()})
+
+    </div>
+
+  `;
+
+
+  if(complementLabels.length === 0){
+
+    html += `
+
+      <div class="summary-empty">
+        Nenhum complemento
+      </div>
+
+    `;
+
+  }
+
+  else{
+
+    html += `
+
+      <div class="summary-line">
+
+        <span>
+          ${complementLabels.join(", ")}
+        </span>
+
+        <span>
+          ${
+            complementExtraCount > 0
+              ? "+" +
+                fmt(
+                  complementExtraCount *
+                  COMPLEMENTO_EXTRA_PRICE
+                )
+              : ""
+          }
+        </span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  const coberturaLabels =
+    selectedCoberturaLabels();
+
+  const coberturaExtraCount =
+    getCoberturaExtraCount();
+
+
+  html += `
+
+    <div class="summary-sub">
+
+      Coberturas
+      (${Math.min(
+        state.coberturas.size,
+        COBERTURA_LIMIT
+      )}/${COBERTURA_LIMIT})
+
+    </div>
+
+  `;
+
+
+  if(coberturaLabels.length === 0){
+
+    html += `
+
+      <div class="summary-empty">
+        Nenhuma cobertura
+      </div>
+
+    `;
+
+  }
+
+  else{
+
+    html += `
+
+      <div class="summary-line">
+
+        <span>
+          ${coberturaLabels.join(", ")}
+        </span>
+
+        <span>
+          ${
+            coberturaExtraCount > 0
+              ? "+" +
+                fmt(
+                  coberturaExtraCount *
+                  COBERTURA_EXTRA_PRICE
+                )
+              : ""
+          }
+        </span>
+
+      </div>
+
+    `;
+
+  }
+
+
+  summaryLines.innerHTML =
+    html;
+
+  totalValueEl.textContent =
+    fmt(calcTotal());
+
+
+  const needsFlavor =
+    state.baseType !== "acai"
+      ? state.flavors.size > 0
+      : true;
+
+  const addrOk =
+    isAddressComplete(addr);
+
+  const payOk =
+    !!state.paymentId;
+
+  const trocoOk =
+    state.paymentId !== "dinheiro" ||
+    !trocoCheck.checked ||
+    trocoField.value.trim().length > 0;
+
+
+  sendBtn.disabled =
+    !(
+      size &&
+      needsFlavor &&
+      addrOk &&
+      payOk &&
+      trocoOk
+    );
+
+}
+
+
+/* WHATSAPP */
+
+function buildWhatsAppMessage(){
+
+  const size =
+    getSelectedSize();
+
+  const obs =
+    obsField.value.trim();
+
+  const addr =
+    getAddress();
+
+  const payment =
+    PAYMENT_METHODS.find(
+      p => p.id === state.paymentId
+    );
+
+
+  let msg =
+    `Olá! Quero fazer um pedido no Rei do Açaí 🍇\n\n`;
+
+
+  msg +=
+    `Base: ${baseLabel()}\n`;
+
+
+  if(state.baseType !== "acai"){
+
+    const flavors =
+      selectedFlavorLabels();
+
+    const flavorExtraCount =
+      getFlavorExtraCount();
+
+    msg +=
+      `Sabor(es) de sorvete: ${
+        flavors.length
+          ? flavors.join(", ")
+          : "-"
+      }`;
+
+    if(flavorExtraCount > 0){
+
+      msg +=
+        ` (${flavorExtraCount} extra${
+          flavorExtraCount > 1
+            ? "s"
+            : ""
+        }, +${
+          fmt(
+            flavorExtraCount *
+            SORVETE_FLAVOR_EXTRA_PRICE
+          )
+        })`;
+
+    }
+
+    msg += "\n";
+
+  }
+
+
+  msg +=
+    `Tamanho: ${size.label}\n`;
+
+
+  const complementLabels =
+    selectedComplementLabels();
+
+  const complementExtraCount =
+    getComplementExtraCount();
+
+
+  msg +=
+    `Complementos: ${
+      complementLabels.length
+        ? complementLabels.join(", ")
+        : "nenhum"
+    }`;
+
+
+  if(complementExtraCount > 0){
+
+    msg +=
+      ` (${complementExtraCount} extra${
+        complementExtraCount > 1
+          ? "s"
+          : ""
+      }, +${
+        fmt(
+          complementExtraCount *
+          COMPLEMENTO_EXTRA_PRICE
+        )
+      })`;
+
+  }
+
+  msg += "\n";
+
+
+  const coberturaLabels =
+    selectedCoberturaLabels();
+
+  const coberturaExtraCount =
+    getCoberturaExtraCount();
+
+
+  msg +=
+    `Coberturas: ${
+      coberturaLabels.length
+        ? coberturaLabels.join(", ")
+        : "nenhuma"
+    }`;
+
+
+  if(coberturaExtraCount > 0){
+
+    msg +=
+      ` (${coberturaExtraCount} extra${
+        coberturaExtraCount > 1
+          ? "s"
+          : ""
+      }, +${
+        fmt(
+          coberturaExtraCount *
+          COBERTURA_EXTRA_PRICE
+        )
+      })`;
+
+  }
+
+  msg += "\n";
+
+
+  if(obs){
+
+    msg +=
+      `Observação: ${obs}\n`;
+
+  }
+
+
+  msg +=
+    `\nEndereço de entrega:\n`;
+
+  msg +=
+    `${addr.street}, ${addr.number}${
+      addr.complement
+        ? " - " + addr.complement
+        : ""
+    }\n`;
+
+  msg +=
+    `${addr.neighborhood} - ${addr.city}\n`;
+
+  msg +=
+    `CEP: ${addr.cep}\n`;
+
+
+  msg +=
+    `\nPagamento: ${
+      payment
+        ? payment.label
+        : "-"
+    }`;
+
+
+  if(state.paymentId === "dinheiro"){
+
+    if(
+      trocoCheck.checked &&
+      trocoField.value.trim()
+    ){
+
+      msg +=
+        ` (precisa de troco para R$ ${
+          trocoField.value.trim()
+        })`;
+
+    }
+
+    else{
+
+      msg +=
+        ` (não precisa de troco)`;
+
+    }
+
+  }
+
+
+  msg +=
+    `\n\nTotal: ${fmt(calcTotal())}`;
+
+
+  return msg;
+
+}
+
+
+function showToast(text){
+
+  toast.textContent =
+    text;
+
+  toast.classList.add("show");
+
+  setTimeout(
+    () =>
+      toast.classList.remove("show"),
+    2600
+  );
+
+}
+
+
+function sendOrder(){
+
+  if(sendBtn.disabled){
+    return;
+  }
+
+  const message =
+    buildWhatsAppMessage();
+
+  const url =
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+  showToast(
+    "Pedido pronto! Abrindo o WhatsApp..."
+  );
+
+  window.open(
+    url,
+    "_blank"
+  );
+
+}
+
+
+sendBtn.addEventListener(
+  "click",
+  sendOrder
+);
+
+
+const footerWhats =
+  document.getElementById(
+    "footerWhats"
+  );
+
+
+footerWhats.addEventListener(
+  "click",
+  e => {
+
+    e.preventDefault();
+
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}`,
+      "_blank"
+    );
+
+  }
+);
+
+
+/* INICIALIZAÇÃO */
+
+renderBase();
+renderFlavors();
+renderSizes();
+renderComplementos();
+renderCoberturas();
+renderPayment();
+renderSummary();
+
+</script>
+
+</body>
+</html>
